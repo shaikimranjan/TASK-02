@@ -26,7 +26,20 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  
+  <distributionManagement>
+    <repository>
+      <id>task-maven</id>
+      <url>http://34.204.9.234:8081/repository/task-maven/</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+        </releases>
+    </repository>
+  </distributionManagement>
+      
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
